@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style type="text/css">
+        img{
+            width: auto;
+            height: auto;
+        }
+        .caixa2{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: salmon;
+            animation-name: transparencia;
+            animation-duration: 1s;
+        }
+        .caixa2 img:hover{
+            animation-name: transparencia;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+        }
+        header{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(185, 96, 244);
+        }
+        header h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        header:hover{
+            opacity: 0;
+        }
+      /*  .caixa{
+            position: absolute;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            animation-name: canvi_color;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes canvi_color{
+            0%{
+                background-color: greenyellow;
+                top: 0;
+            }
+            40%{
+                background-color: orange;
+                top: 100px;
+            }
+            80%{
+                background-color: orchid;
+                top: 200px;
+            }
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="caixa2">
+        <header>
+            <h2>fun</h2>
+        </header>
+        <img src="img/descarga (1).jpg" alt="">
+    </div>
+
+</body>
+</html>
